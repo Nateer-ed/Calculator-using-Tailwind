@@ -22,11 +22,11 @@ To run the calculator locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/calculator.git
+    git clone https://github.com/Nateer-ed/Calculator-using-Tailwind.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd calculator
+    cd Calculator-using-Tailwind
     ```
 3. Open `index.html` in your web browser.
 
