@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="calculator bg-black rounded-lg shadow-lg p-6">
+        <input type="text" id="display" class="w-full text-right text-2xl bg-gray-200 p-3 rounded-md mb-4" readonly>
+
+        <div class="grid grid-cols-4 gap-2">
+            <button class="bg-white text-black py-3 rounded-md text-xl" onclick="appendValue('7')">7</button>
+            <button class="bg-white text-black py-3 rounded-md text-xl" onclick="appendValue('8')">8</button>
+            <button class="bg-white text-black py-3 rounded-md text-xl" onclick="appendValue('9')">9</button>
+            <button class="bg-red-600 text-white py-3 rounded-md text-xl" onclick="clearDisplay()">C</button>
+            <button class="bg-white text-black py-3 rounded-md text-xl" onclick="appendValue('4')">4</button>
+            <button class="bg-white text-black py-3 rounded-md text-xl" onclick="appendValue('5')">5</button>
+            <button class="bg-white text-black py-3 rounded-md text-xl" onclick="appendValue('6')">6</button>
+            <button class="bg-indigo-400 text-white py-3 rounded-md text-xl" onclick="appendValue('/')">/</button>
+            <button class="bg-white text-black py-3 rounded-md text-xl" onclick="appendValue('1')">1</button>
+            <button class="bg-white text-black py-3 rounded-md text-xl" onclick="appendValue('2')">2</button>
+            <button class="bg-white text-black py-3 rounded-md text-xl" onclick="appendValue('3')">3</button>
+            <button class="bg-indigo-400 text-white py-3 rounded-md text-xl" onclick="appendValue('*')">*</button>
+            <button class="bg-white text-black py-3 rounded-md text-xl" onclick="appendValue('0')">0</button>
+            <button class="bg-indigo-400 text-white py-3 rounded-md text-xl" onclick="appendValue('.')">.</button>
+            <button class="bg-indigo-400 text-white py-3 rounded-md text-xl" onclick="appendValue('-')">-</button>
+            <button class="bg-indigo-400 text-white py-3 rounded-md text-xl" onclick="appendValue('+')">+</button>
+            <button class="bg-indigo-400 text-white py-3 rounded-md col-span-4 text-xl" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>

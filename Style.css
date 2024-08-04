@@ -1,0 +1,7 @@
+.calculator {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.calculator input {
+    caret-color: transparent; /* Hides the caret */
+}
